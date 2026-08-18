@@ -2,13 +2,17 @@ name: Generate trophy card
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+
+concurrency:
+  group: trophy-output
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -23,7 +27,10 @@ jobs:
         with:
           username: ${{ github.repository_owner }}
           file: dist/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # PAT with `repo` + `read:user` is required: the default GITHUB_TOKEN
+          # cannot read the user's contribution data and the action exits 3 with
+          # "Failed to fetch user info."
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           theme: dracula
           max-rows: 1
           margin-width: 8

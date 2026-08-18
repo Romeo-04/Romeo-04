@@ -2,13 +2,17 @@ name: Generate stats card
 
 on:
   schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
     - main
+
+concurrency:
+  group: stats-output
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -24,8 +28,10 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false
           path: dist/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
+          # PAT with `repo` + `read:user` is required: the default GITHUB_TOKEN
+          # cannot read contributionsCollection and returns
+          # "Resource not accessible by integration".
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
 
       - name: push stats.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
