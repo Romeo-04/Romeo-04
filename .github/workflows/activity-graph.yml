@@ -28,7 +28,8 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: ${{ github.repository_owner }}
-          options: radius=16&theme=dracula&area=true
+          # café palette (matches jhez-cafe.vercel.app)
+          options: radius=28&area=true&bg_color=fffaf3&color=75594a&title_color=2b1a10&line=c4552f&point=2b1a10&area_color=e6c7a3&hide_border=true&custom_title=Brewing%20history%20%C2%B7%20last%2031%20days
           output_path: dist/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
