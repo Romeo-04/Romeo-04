@@ -121,7 +121,7 @@ At Ed3N I work **AI-first**: I direct coding agents instead of hand-writing ever
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Romeo-04&background=FFFAF3&border=E6D3BA&stroke=E6D3BA&ring=C4552F&fire=C4552F&currStreakNum=2B1A10&sideNums=2B1A10&currStreakLabel=A0482A&sideLabels=75594A&dates=75594A&border_radius=28&card_width=1000" width="100%" alt="Contribution streak" />
+  <img src="https://streak-stats.demolab.com?user=Romeo-04&background=FFFAF3&border=E6D3BA&stroke=E6D3BA&ring=C4552F&fire=C4552F&currStreakNum=2B1A10&sideNums=2B1A10&currStreakLabel=A0482A&sideLabels=75594A&dates=75594A&border_radius=28&card_width=1000&disable_animations=true" width="100%" alt="Contribution streak" />
 </p>
 
 <p align="center">
