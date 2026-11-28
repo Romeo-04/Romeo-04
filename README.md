@@ -34,9 +34,13 @@
 <a name="about"></a>
 <img src="./assets/section-about.svg" width="100%" alt="02 · About the Barista" />
 
+<img src="./assets/barista.png" align="right" width="250" alt="Jhezra as a 3D toon barista: wavy black hair, white sweater and a terracotta apron with a name tag, waving hello" />
+
 Hi, I'm **Jhezra**, a Computer Science student at **FEU Institute of Technology** (Software Engineering, class of 2027), a **DOST-SEI** and **University Elite Scholar**, and a Software Engineering Intern at **Ed3N Ventures**.
 
 At Ed3N I work **AI-first**: I direct coding agents instead of hand-writing every line, and I put my effort into the harnesses, guardrails and code review that keep their output accountable. Before that I led the web development team, and earlier the academics committee, of the **FEU Tech ACM Student Chapter**. My thesis, **KitaKo**, puts Taglish-aware image search directly on your phone.
+
+<br clear="right" />
 
 <div align="center">
   <img src="./assets/loyalty-card.svg" width="100%" alt="Loyalty card stamps: 3.8 GPA, DOST-SEI Scholar, University Elite Scholar, Gold Dean's List, FEU Tech CS 2027, ACM Web Lead, Ed3N SWE Intern" />
