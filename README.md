@@ -34,7 +34,7 @@
 <a name="about"></a>
 <img src="./assets/section-about.svg" width="100%" alt="02 · About the Barista" />
 
-<img src="./assets/barista.png" align="right" width="250" alt="Jhezra as a 3D toon barista: wavy black hair, white sweater and a terracotta apron with a name tag, waving hello" />
+<img src="./assets/barista.png" align="right" width="250" alt="Jhezra as an illustrated barista: wavy black hair, cream sweater and a terracotta apron with a name tag, waving hello" />
 
 Hi, I'm **Jhezra**, a Computer Science student at **FEU Institute of Technology** (Software Engineering, class of 2027), a **DOST-SEI** and **University Elite Scholar**, and a Software Engineering Intern at **Ed3N Ventures**.
 
